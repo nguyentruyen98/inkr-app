@@ -1,0 +1,78 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/breakpoints';
+.about {
+  height: 320px;
+  .contentWrapper {
+    height: 100%;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: calc(100% - 41px);
+      .tag {
+        display: flex;
+        gap: 8px;
+      }
+      .summary {
+        font-size: 14px;
+        line-height: 22px;
+        color: $textColorSecondary;
+      }
+      .showMore {
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+        color: $textColorSecondary;
+        cursor: pointer;
+        transition: border-bottom-color 50ms linear 0s;
+        user-select: none;
+
+        &::after {
+          display: block;
+          content: '';
+          border-bottom: solid 1px $textColorSecondary;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+        }
+        &:hover {
+          color: #fff;
+          border-bottom-color: #fff;
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+      }
+      .aboutImg {
+        display: flex;
+        justify-content: space-between;
+        row-gap: 12px;
+        flex-wrap: wrap;
+        @include media-breakpoint-down(xxl) {
+          justify-content: unset;
+          gap: 12px;
+        }
+      }
+      .otherFacts {
+        .key {
+          font-weight: 14px;
+          line-height: 22px;
+          font-weight: 400;
+          color: $textColorThird;
+          display: flex;
+          justify-content: space-between;
+        }
+        .value {
+          margin-left: 12px;
+          font-weight: 14px;
+          line-height: 22px;
+          font-weight: 400;
+        }
+        transition: all 0.25 ease-in-out;
+      }
+    }
+  }
+}
+.fitContent {
+  height: fit-content;
+}

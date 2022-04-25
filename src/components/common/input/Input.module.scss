@@ -1,0 +1,14 @@
+@import '../../../../styles/variables';
+
+.input {
+  input {
+    background-color: unset;
+    border: 1px solid $borderColor;
+    height: 32px;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $inputPlaceholderColor;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../../../styles/variables';
+
+.lastReadItem {
+  background-color: $contentBackground;
+  padding: 12px;
+  border-radius: 8px;
+}
+.allChapters {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .buttonGroup {
+    display: flex;
+    gap: 8px;
+  }
+}
+.chapterItem {
+  margin: 0 -24px;
+  padding: 12px 24px;
+  box-sizing: content-box;
+}
+.isActive {
+  background-color: $contentBackground;
+}

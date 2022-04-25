@@ -1,0 +1,47 @@
+@import '../../../../styles/variables';
+.extraSmall {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $textColorThird;
+}
+.small {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $textColorSecondary;
+}
+.medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $textColorSecondary;
+}
+.large {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $textColor;
+}
+.extraLarge {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  color: $textColor;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: $textColor;
+}
+
+.purple {
+  color: $purple !important;
+}
+.lineThrough {
+  text-decoration: line-through;
+}
+.italic {
+  font-style: italic;
+}

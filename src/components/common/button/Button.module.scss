@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+.button {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 5px 16px;
+  color: $backColor;
+  background-color: $buttonBackground;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: fit-content;
+  user-select: none;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,34 @@
+@import './variables';
+@import './common';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $fontRoboto;
+  background-color: $backColor;
+  color: $textColor;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ant-progress {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  .ant-progress-outer {
+    .ant-progress-inner {
+      border-radius: 0 0 100px 100px;
+      height: 4px;
+      background-color: $backColor;
+
+      .ant-progress-bg {
+        height: 4px !important;
+        border-radius: 0 100px 100px 100px;
+        background-color: $buttonBackground;
+      }
+    }
+  }
+}

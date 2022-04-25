@@ -1,0 +1,20 @@
+@import '../../../../styles/variables';
+
+.iconButton {
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+  border: 1px solid $borderColor;
+  display: flex;
+  justify-content: center;
+  transition: all 250ms ease-in-out;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

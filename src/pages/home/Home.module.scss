@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+@import '../../../styles/breakpoints';
+.homePage {
+  margin: 28px auto;
+  padding-bottom: 28px;
+  @include media-breakpoint-down(lg) {
+    width: 960px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 1168px;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 1568px;
+  }
+}

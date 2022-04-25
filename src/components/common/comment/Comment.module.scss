@@ -1,0 +1,27 @@
+@import '../../../../styles/variables';
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  .date {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $borderColor;
+  }
+}
+.comment {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $textColor;
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .actionItem {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+.progressImg {
+  position: relative;
+  span {
+    position: unset !important;
+  }
+  .lock {
+    height: 12px;
+    width: 12px;
+  }
+}

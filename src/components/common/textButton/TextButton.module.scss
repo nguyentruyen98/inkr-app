@@ -1,0 +1,10 @@
+@import '../../../../styles/variables';
+.textButton {
+  display: flex;
+  align-items: center;
+  color: $textColorSecondary;
+  .label {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}

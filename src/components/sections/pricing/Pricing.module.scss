@@ -1,0 +1,26 @@
+@import '../../../../styles/variables';
+
+.pricingSection {
+  background-color: $contentBackground;
+  border-radius: 8px;
+  .firstRow {
+    border-bottom: 1px solid $sectionBackground;
+    .row {
+      padding: 16px;
+      .locked {
+        display: flex;
+        align-items: center;
+      }
+      &:first-child {
+        border-right: 1px solid $sectionBackground;
+      }
+    }
+  }
+  .lastRow {
+    padding: 0 16px;
+    .price {
+      padding: 16px 0;
+      border-bottom: 1px solid $sectionBackground;
+    }
+  }
+}
